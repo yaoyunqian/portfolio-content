@@ -1,0 +1,81 @@
+/*Skip to main function*/
+.skip a{
+    position: absolute;
+    top: -40px;
+    z-index: 1;
+    color: black;
+}
+
+.skip a:focus{
+    position: absolute;
+    top: 0;
+    color: black;
+}
+
+h1{
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 40px;
+    color:yellow;
+    background: linear-gradient(180deg, rgb(187, 7, 7) 0%, rgb(189, 87, 87) 35%, rgb(217, 174, 174) 100%);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+h2{
+    font-family:"Lucida Bright", Georgia, serif;
+    font-size: 25px;
+    font-weight: bold;
+    color:chocolate;
+    padding: 10px;
+    margin: 10px;
+}
+
+p{
+    font-family: "Lucida Bright", Georgia, serif;;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    line-height: 22px;
+}
+
+.inBold{
+    font-weight: bold;
+}
+
+.inItalic{
+    font-style: italic;
+}
+
+img{
+    width: 50%;
+    min-width: 100px;
+    /*border: 10px dashed #fb8320;*/
+    border: 15px solid transparent;
+    background: linear-gradient(white, white) padding-box, repeating-linear-gradient(-45deg, orange 0, orange 12.5%, transparent 0, transparent 25%, yellow 0, yellow 37.5%, transparent 0, transparent 50%) 0 / 50px 50px;
+    margin: 15px;
+    padding: 2px;
+}
+
+img:hover{
+    opacity: 0.6;
+}
+
+nav{
+    font-family: "Lucida Bright", Georgia, serif;;
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+}
+
+a:link{
+    color:blue;
+}
+
+a:visited{
+    color:blueviolet;
+}
+
+a:hover{
+    color:cadetblue;
+}
