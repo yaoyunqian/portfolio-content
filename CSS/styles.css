@@ -93,3 +93,8 @@ a:visited{
 a:hover{
     color:cadetblue;
 }
+
+.active{
+    color: blueviolet;
+    font-weight: bold;
+}
