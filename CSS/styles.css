@@ -98,3 +98,12 @@ a:hover{
     color: blueviolet;
     font-weight: bold;
 }
+
+footer{
+    font-family: "Lucida Bright", Georgia, serif;;
+    font-size: 12px;
+    color:#805959;
+    margin: 10px;
+    padding: 10px;
+    line-height: 15px;
+}
