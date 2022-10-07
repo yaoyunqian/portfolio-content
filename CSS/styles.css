@@ -45,6 +45,24 @@ h2{
     text-shadow: 1px 1px 1px rgba(52, 28, 1, 0.7);
 }
 
+h3{
+	font-family:"Lucida Bright", Georgia, serif;
+    font-size: 20px;
+    font-weight: bold;
+    color:chocolate;
+    padding: 10px;
+    margin: 10px;
+    text-shadow: 1px 1px 1px rgba(52, 28, 1, 0.7);
+}
+
+.ingredients{
+	font-family: "Lucida Bright", Georgia, serif;;
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    line-height: 22px;
+}
+
 p{
     font-family: "Lucida Bright", Georgia, serif;;
     font-size: 20px;
