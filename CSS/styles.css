@@ -70,6 +70,7 @@ img{
     .nav_links{
         flex-direction: row;
         justify-content: flex-end;
+        margin-top: 10px;
     }
 
     .pricing{
