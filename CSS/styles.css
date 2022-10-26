@@ -1,127 +1,90 @@
-/*Skip to main function*/
-.skip a{
-    position: absolute;
-    top: -40px;
-    z-index: 1;
-    color: black;
+html{
+    font-family: Poppins, sans-serif;
 }
 
-.skip a:focus{
-    position: absolute;
-    top: 0;
-    color: black;
+header{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
 }
 
-body{
-    background: radial-gradient(circle at 60% 90%, rgb(243, 175, 116), transparent 60%),
-    radial-gradient(circle at 20px 20px, rgba(237, 215, 149, 0.8), transparent 25%), #e38e8e;
-    /*background:
-    radial-gradient(circle, transparent 20%, rgb(144, 155, 211) 20%, rgb(144, 155, 211) 80%, transparent 80%, transparent),
-    radial-gradient(circle, transparent 20%, rgb(144, 155, 211) 20%, rgb(144, 155, 211) 80%, transparent 80%, transparent) 50px 50px,
-    linear-gradient(#A8B1BB 8px, transparent 8px) 0 -4px,
-    linear-gradient(90deg, #A8B1BB 8px, transparent 8px) -4px 0;
-    background-color: rgb(144, 155, 211);
-    background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;*/
+.nav_links{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
 }
 
-h1{
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-    font-size: 40px;
-    color:yellow;
-    background: linear-gradient(180deg, rgb(187, 7, 7) 0%, rgb(189, 87, 87) 35%, rgb(246, 228, 175) 100%);
-    padding: 20px;
-    margin: 0px;
-    text-align: center;
-    text-shadow: 3px 4px 2px rgba(170, 90, 15, 0.7);
+.pricing{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
 }
 
-h2{
-    font-family:"Lucida Bright", Georgia, serif;
-    font-size: 25px;
-    font-weight: bold;
-    color:chocolate;
-    padding: 10px;
-    margin: 10px;
-    text-shadow: 1px 1px 1px rgba(52, 28, 1, 0.7);
+.gallery{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
 }
 
-h3{
-	font-family:"Lucida Bright", Georgia, serif;
-    font-size: 20px;
-    font-weight: bold;
-    color:chocolate;
-    padding: 10px;
-    margin: 10px;
-    text-shadow: 1px 1px 1px rgba(52, 28, 1, 0.7);
+header img{
+    width: 100%;
+    height: auto;
+    animation: fadeIn 3s;
 }
 
-.ingredients{
-	font-family: "Lucida Bright", Georgia, serif;;
-    font-size: 18px;
-    margin: 10px;
-    padding: 10px;
-    line-height: 22px;
-}
-
-p{
-    font-family: "Lucida Bright", Georgia, serif;;
-    font-size: 20px;
-    margin: 10px;
-    padding: 10px;
-    line-height: 22px;
-}
-
-.inBold{
-    font-weight: bold;
-}
-
-.inItalic{
-    font-style: italic;
+.card{
+    width: 100%;
 }
 
 img{
-    width: 50%;
-    min-width: 100px;
-    /*border: 10px dashed #fb8320;*/
-    border: 15px solid transparent;
-    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255,255,255,0.4)) padding-box, repeating-linear-gradient(-45deg, rgb(190, 101, 24) 0, rgb(190, 101, 24) 12.5%, transparent 0, transparent 25%, rgb(247, 214, 115) 0, rgb(247, 214, 115) 37.5%, transparent 0, transparent 50%) 0 / 50px 50px;
-    margin: 15px;
-    padding: 5px;
+    width: 100%;
 }
 
-img:hover{
-    opacity: 0.6;
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-nav{
-    font-family: "Lucida Bright", Georgia, serif;;
-    font-size: 18px;
-    margin: 10px;
-    padding: 10px;
+@media (prefers-reduced-motion){
+    header img{
+        animation: none;
+    }
 }
 
-a:link{
-    color:blue;
-}
+@media all and (min-width: 700px){ /*desktop view*/
+    header img{
+        width: 400px;
+        height: auto;
+        left: 0;
+    }
 
-a:visited{
-    color:blueviolet;
-}
+    header{
+        flex-direction: row;
+    }
 
-a:hover{
-    color:cadetblue;
-}
+    .nav_links{
+        flex-direction: row;
+        justify-content: flex-end;
+    }
 
-.active{
-    color: blueviolet;
-    font-weight: bold;
-}
+    .pricing{
+        flex-direction: row;
+    }
 
-footer{
-    font-family: "Lucida Bright", Georgia, serif;;
-    font-size: 12px;
-    color:#805959;
-    margin: 10px;
-    padding: 10px;
-    line-height: 15px;
+    .gallery{
+        flex-direction: row;
+    }
+
+    .card{
+        width: 300px;
+    }
+
+    img{
+        width: 300px;
+    }
 }
