@@ -25,9 +25,30 @@
   </header>
 	
   <main id="main">
-    <p>Hi! I'm Cici Yao, a foodie as well as a home-cook from China. This site not only serves as a gallery for a few of my signature dishes, but also aims to familiarize you with some traditional Chinese cuisine.</p>
+    <p>Hi! I'm Cici Yao, a foodie as well as a home-cook from China. Agriculture civilization is fundamental in our country's history, and as an old saying goes, "food is paramount to the people". In recent centuries, the magic of Chinese food has gradually unrolled itself in lots of contries around the world. As a Chinese, I love to cook for my Chinese stomach, wherever I live. This site not only serves as a gallery for a few of my signature dishes, but also aims to familiarize you with some traditional Chinese cuisine.</p>
+	  
 	<div id="home-photo">
     <a href="rice.html#braisedPork"><img src = "images/rice_coverpage-braised_pork_rice.jpg" alt ="braised pork with rice" title="Link to the recipe of braised pork with rice"></a>
+	</div>
+	  
+	<p>Just a bit more information about me: before being a feverish cooking lover, I have always been an amateur painter. Cooking appears to be similar in many ways to drawing. There's plenty of room for imagination. There's no right and wrong. There's no universal standards. Moreover, they are both an extended part of me. When these two hobbies collide, let's see the flower that blossomed between them:</p>
+	<figure class="painting">
+		<video class="video"
+			autoplay="false"
+			width="640"
+			height="360"
+			id="videoplayer"
+			preload="none"
+			src="video/myPainting.mp4"
+			alt="video of my painting process for home made dishes">
+			Your browser does not support HTML5 video.
+		</video>
+		<figcaption>My Painting of Home-Made Dishes</figcaption>
+	</figure>  
+	<div class="options">
+		<label id="timer" for="progress" role="timer"></label>
+    	<button id="play" aria-label="Play" role="button">►</button>
+    	<progress id="progress" max="100" value="0">Progress</progress>
 	</div>
     <p>Three categories of recipes are listed as below. Feel free to explore!</p>
 
@@ -46,7 +67,7 @@
 	<form action="https://formspree.io/f/moqbpyww" method="POST">
   		<label>Your email:&nbsp;<input type="email" name="email"></label>
   		<label>Your message:&nbsp;<textarea name="message"></textarea></label>
-  		<button type="submit">Send</button>
+  		<button id="send" type="submit">Send</button>
 	</form>
 	  
   </main>
@@ -58,5 +79,7 @@
   <footer>
     Copyright @Cici Yao. Portfolio project for SI539 Web Design at UMSI. Fall 2022.
   </footer>
+	
+  <script src="js/video.js"></script>
 </body>
 </html>
