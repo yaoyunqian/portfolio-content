@@ -13,8 +13,11 @@
 }
 
 body{
-    background: radial-gradient(circle at 60% 90%, rgb(243, 175, 116), transparent 60%),
-    radial-gradient(circle at 20px 20px, rgba(237, 215, 149, 0.8), transparent 25%), #e38e8e;
+/*
+    background: radial-gradient(circle at 60% 90%, rgb(243, 175, 116), transparent 40%),
+    radial-gradient(circle at 20px 20px, rgba(237, 215, 149, 0.8), transparent 15%), #e38e8e;
+*/
+	background-color: #FFF4D6;
 	display: grid;
 	grid-template-columns: repeat(4, 25%);
     /*background:
@@ -53,11 +56,13 @@ main{
 }
 
 h1{
+	position: relative;
     font-family: "Sofia", sans-serif; /* Copperplate, "Copperplate Gothic Light", fantasy;*/
 	font-style: italic;
     font-size: 40px;
-    color:yellow;
-    background: linear-gradient(180deg, rgb(187, 7, 7) 0%, rgb(189, 87, 87) 35%, rgb(246, 228, 175) 100%);
+    color:#FFFF6B;
+/*    background: linear-gradient(180deg, rgb(187, 7, 7) 0%, rgb(189, 87, 87) 35%, rgb(246, 228, 175) 100%);*/
+	background: linear-gradient(90deg, rgb(246, 228, 175) 0%, #AC0606 30%, #AC0606 70%, rgb(246, 228, 175) 100%);
     padding: 20px;
     margin: 0px;
     text-align: center;
@@ -68,7 +73,7 @@ h2{
     font-family:"Lucida Bright", Georgia, serif;
     font-size: 25px;
     font-weight: bold;
-    color:chocolate;
+    color:#673613;
 	background: linear-gradient(90deg, rgba(251,232,64,0.45) 0%, rgba(251,232,64,0.2) 50%, rgba(251,232,64,0) 100%);
     padding: 20px;
     margin: 0px;
@@ -79,10 +84,10 @@ h3{
 	font-family:"Lucida Bright", Georgia, serif;
     font-size: 20px;
     font-weight: bold;
-    color:chocolate;
+    color: #7E4401;
     padding: 10px;
     margin: 10px;
-    text-shadow: 1px 1px 1px rgba(52, 28, 1, 0.7);
+/*    text-shadow: 1px 1px 1px rgba(52, 28, 1, 0.7);*/
 }
 
 ul{
@@ -161,7 +166,7 @@ p{
     font-size: 20px;
     margin: 10px;
     padding: 10px;
-    line-height: 22px;
+    line-height: 25px;
 }
 
 .timer{
@@ -215,24 +220,24 @@ nav{
 }
 
 a:link{
-    color:blue;
+    color:#005885;
 }
 
 a:visited{
-    color:blueviolet;
+    color:#8800A3;
 }
 
 a:hover{
-    color:cadetblue;
+    color:#A80000;
 }
 
 .active{
-    color: blueviolet;
+    color: #006118;
     font-weight: bold;
 }
 
 #home-aside{
-	background-color: rgba(247,198,146,0.61);
+	background-color: rgba(248,203,128,0.57);
 	font-size: 18px;
 	font-style: italic;
 	grid-row: 7;
@@ -243,7 +248,7 @@ a:hover{
 footer{
     font-family: "Lucida Bright", Georgia, serif;;
     font-size: 12px;
-    color:#805959;
+    color:#694949;
     margin: 10px;
     padding: 10px;
     line-height: 15px;
@@ -271,10 +276,106 @@ figcaption{
     margin: 0px 0px 20px 30px;
     padding: 0px;
     line-height: 22px;
+	text-align: center;
 }
 
+.painting {
+  box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  width: 100%;
+}
 
-@media all and (min-width: 800px){
+.video{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.options{
+  align-items: center;
+  background: linear-gradient(to right, rgba(248,203,128,0.57), transparent);
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 50px auto min(115px);
+  padding: .5rem;
+}
+
+button {
+  border: 0;
+  background: #e52e71;
+  display: inline;
+  color: white;
+  order: 1;
+  padding: .5rem;
+  transition: opacity .25s ease-out;
+  width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+label {
+  order: 2;
+  text-align: center;
+}
+
+/* Fallback stuff */
+progress[value] {
+  appearance: none;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0,.25) inset;
+  color: dodgerblue;
+  display: inline;
+  height: 15px;
+  order: 1;
+  position: relative;
+  width: 100%;
+}
+
+/* WebKit styles */
+progress[value]::-webkit-progress-bar {
+  background-color: whiteSmoke;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0,.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-image: linear-gradient(
+    to right,
+    #ff8a00, #e52e71
+  );
+  border-radius: 3px;
+  position: relative;
+  transition: width 1s linear;
+}
+
+/* Firefox styles */
+progress[value]::-moz-progress-bar {
+  background-image: -moz-linear-gradient(
+    to right,
+    #ff8a00, #e52e71
+  );
+  border-radius: 3px;
+  position: relative;
+  transition: width 1s linear;
+}
+
+#send{
+	width: 10%;
+	margin-left: 15px;
+}
+
+/*tablet view*/
+@media all and (min-width: 768px){
 	#home-photo{
 		text-align: left;
 		margin-left: 30px;
@@ -285,9 +386,17 @@ figcaption{
 		background-color: rgba(247,198,146,0.61);
 		font-size: 18px;
 		font-style: italic;
-		grid-row: 2;
+		grid-row: 3;
 		grid-column: 3;
 		float: right;
+	}
+	
+	progress[value]{
+		width: 60%;
+	}
+	
+	.painting{
+		width: 60%;
 	}
 	
 	.gallery{
@@ -296,6 +405,30 @@ figcaption{
 	
 	.gallery img{
 		height: 350px;
+		width: 100%;
+		object-fit: cover;
+		vertical-align: middle;
+		border-radius: 5px;
+	}
+}
+
+
+/*desktop view*/
+@media all and (min-width: 1024px){
+	progress[value]{
+		width: 50%;
+	}
+	
+	.painting{
+		width: 50%;
+	}
+	
+	.gallery{
+		flex-basis: 250px;
+	}
+	
+	.gallery img{
+		height: 250px;
 		width: 100%;
 		object-fit: cover;
 		vertical-align: middle;
