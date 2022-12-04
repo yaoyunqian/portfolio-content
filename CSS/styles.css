@@ -434,4 +434,9 @@ progress[value]::-moz-progress-bar {
 		vertical-align: middle;
 		border-radius: 5px;
 	}
+	
+	li{
+		display: inline;
+		padding: 10px;
+	}
 }
